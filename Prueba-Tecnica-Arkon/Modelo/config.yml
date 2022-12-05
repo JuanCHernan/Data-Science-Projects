@@ -1,0 +1,50 @@
+variable_dependiente:
+    passholder_type
+
+variables_eliminar:
+    - trip_id
+    - bike_id 
+    - start_time
+    - end_time
+    - start_station
+    - end_station
+    - plan_duration
+
+variables_con_nulos:
+    - start_lat
+    - start_lon
+    - end_lat
+    - end_lon
+
+limites_rango_intercuartil:
+    start_lat:
+        - 34.01861100000001
+        - 34.071939
+    start_lon:
+        - -118.330822 
+        - -118.195782
+    end_lat:
+        - 34.017283500000005
+        - 34.07108749999999
+    end_lon:
+        - -118.33164200000002
+        - -118.19528999999997
+
+variables_transformadas_YJ:
+    - duration
+    # - plan_duration
+
+mapeo_variables:
+    trip_route_category:
+        Round Trip: 0
+        One Way: 1
+
+    passholder_type:
+        0: Walk-up
+        1: Monthly Pass
+        2: One Day Pass
+        3: Annual Pass
+        4: Flex Pass
+
+
+
