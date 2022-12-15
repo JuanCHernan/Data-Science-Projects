@@ -99,3 +99,9 @@ important_variables:
     - Total_Trans_Amt 
     - Total_Ct_Chng_Q4_Q1 
     - Avg_Utilization_Ratio 
+
+non_significant_variables:
+    - Customer_Age
+    - Total_Amt_Chng_Q4_Q1
+    - Education_Level 
+
